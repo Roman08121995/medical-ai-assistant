@@ -1,82 +1,119 @@
-# Conversational AI assistant for Good Health Clinic
+# 🏥 Good Health AI Assistant – Smart Medical Chatbot with LangGraph & GPT
 
-Using <b>LangGraph</b>, <b>LangChain</b>, and <b>OpenAI’s GPT</b> models, the system processes patient queries, updates their medical records, and provides intelligent responses based on their history.
+An intelligent, memory-aware conversational assistant for **Good Health Clinic**, built with **LangGraph**, **LangChain**, and **OpenAI GPT**. This system routes patient queries, detects emergencies, manages appointments, and updates medical records — all through natural multi-turn conversations.
 
-<img src="image/my_graph.png">
+<img src="image/my_graph.png" alt="Flow Diagram" width="600"/>
 
-## Features
-- AI-powered Appointment Scheduling
-- Patient Profile Management (tracks medical history, allergies, past treatments)
-- Emergency Detection & Alert System
-- Multi-turn Conversations with Memory
-- Graph-based Conversational Flow with Decision Routing
+---
 
-## Code Overview
-🔹 ```check_condition()```
+## ✨ Key Features
 
-Routes the conversation:
+* 🤖 **AI-Powered Appointment Scheduling**
+* 👤 **Patient Profile Management** (history, allergies, treatments)
+* 🚨 **Emergency Detection & Alert System**
+* 💬 **Multi-turn Memory Conversations**
+* 🧠 **LangGraph-Based Decision Routing**
 
-- If the message contains ```"emergency"```, routes to ```handle_emergency()```
-- Otherwise, routes to ```call_model()```
+---
 
-🔹 ```call_model()```
-Retrieves patient history and generates AI responses using OpenAI's GPT model.
+## 🧩 How It Works
 
-🔹 ```handle_emergency()```
-Provides immediate emergency instructions.
+### 🔹 `check_condition()`
 
-🔹 ```write_memory()```
-Updates and stores patient medical records.
+Determines the route of conversation:
 
-## Installation
-1) Clone the Repository
-```bash 
+* Routes to `handle_emergency()` if message contains **"emergency"**
+* Otherwise, calls `call_model()` for regular processing
+
+### 🔹 `call_model()`
+
+* Retrieves patient data
+* Generates GPT-based responses contextualized with history
+
+### 🔹 `handle_emergency()`
+
+* Delivers urgent care instructions instantly
+
+### 🔹 `write_memory()`
+
+* Updates and persists medical records securely
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1️⃣ Clone the Repo
+
+```bash
 git clone https://github.com/aimaster-dev/medical-ai-assistant
 cd medical-ai-assistant
 ```
-2) Install Dependencies
-Ensure you have Python 3.8+ and install the required dependencies:
+
+### 2️⃣ Install Dependencies
+
+Make sure you're using Python 3.8+
 
 ```bash
 pip install -r requirements.txt
 ```
-3) Set Up Environment Variables
-Create a .env file with your OpenAI API key:
 
-```makefile
+### 3️⃣ Configure Environment Variables
+
+Create a `.env` file:
+
+```env
 OPENAI_API_KEY=your-api-key-here
 ```
 
-## Usage
-Run the chatbot assistant:
+---
+
+## 🚀 Running the Assistant
+
+To launch the chatbot:
 
 ```bash
 python main.py
 ```
 
-Example Conversation:
-```plaintext
-Hello Taher! Thank you for reaching out. I can help you schedule an appointment for your routine check-up. May I know your availability for the appointment?
-```
-For emergencies:
+### 💡 Example Interaction
 
-```plaintext
-User: This is an emergency! I'm experiencing severe chest pain.
-Assistant: We’ve detected an emergency. Please contact emergency services immediately or call our 24/7 urgent line: +43 00 00 00.
+Routine Check-up:
+
+```
+User: I need to book a follow-up appointment.
+Assistant: Hello Taher! I can help you schedule a check-up. When are you available?
 ```
 
-## Technologies Used
-- <b>LangGraph</b> - Graph-based conversation routing
-- <b>LangChain</b> - Memory and LLM integration
-- <b>OpenAI GPT</b> - AI-powered responses
-- <b>Python</b> - Core language
-- <b>InMemoryStore</b> - Persistent patient data storage
+Emergency:
 
-## Contributors
-👨‍💻 Ying Zhou
-📧 Contact: zying1309@gmail.com
+```
+User: This is an emergency! I’m having severe chest pain.
+Assistant: We've detected an emergency. Please call emergency services or our 24/7 urgent line: +43 00 00 00.
+```
 
-Contributions are welcome! Feel free to fork the repo and submit pull requests. 🚀
+---
 
-## License
-This project is licensed under the MIT License.
+## 🧠 Tech Stack
+
+| Tool              | Purpose                              |
+| ----------------- | ------------------------------------ |
+| **LangGraph**     | Graph-based conversational routing   |
+| **LangChain**     | LLM + Memory integration             |
+| **OpenAI GPT**    | Natural language response generation |
+| **Python**        | Backend implementation               |
+| **InMemoryStore** | Persistent session-based memory      |
+
+---
+
+## 👨‍💻 Maintainer
+
+**Ying Zhou**
+📧 [zying1309@gmail.com](mailto:zying1309@gmail.com)
+
+> Contributions welcome! Fork the repo and submit a pull request 🚀
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License**.
