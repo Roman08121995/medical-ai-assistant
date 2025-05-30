@@ -74,7 +74,7 @@ Assistant: We’ve detected an emergency. Please contact emergency services imme
 
 ## Contributors
 👨‍💻 Taher Fattahi
-📧 Contact: taherfattahi11@gmail.com
+📧 Contact: zying1309@gmail.com
 
 Contributions are welcome! Feel free to fork the repo and submit pull requests. 🚀
 
