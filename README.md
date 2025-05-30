@@ -31,8 +31,8 @@ Updates and stores patient medical records.
 ## Installation
 1) Clone the Repository
 ```bash 
-git clone https://github.com/taherfattahi/langgraph-medical-ai-assistant
-cd langgraph-medical-ai-assistant
+git clone https://github.com/aimaster-dev/medical-ai-assistant
+cd medical-ai-assistant
 ```
 2) Install Dependencies
 Ensure you have Python 3.8+ and install the required dependencies:
