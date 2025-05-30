@@ -73,7 +73,7 @@ Assistant: We’ve detected an emergency. Please contact emergency services imme
 - <b>InMemoryStore</b> - Persistent patient data storage
 
 ## Contributors
-👨‍💻 Taher Fattahi
+👨‍💻 Ying Zhou
 📧 Contact: zying1309@gmail.com
 
 Contributions are welcome! Feel free to fork the repo and submit pull requests. 🚀
