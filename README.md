@@ -45,7 +45,7 @@ Determines the route of conversation:
 ### 1️⃣ Clone the Repo
 
 ```bash
-git clone https://github.com/aimaster-dev/medical-ai-assistant
+git clone https://github.com/Roman08121995v/medical-ai-assistant
 cd medical-ai-assistant
 ```
 
@@ -108,7 +108,7 @@ Assistant: We've detected an emergency. Please call emergency services or our 24
 ## 👨‍💻 Maintainer
 
 **Ying Zhou**
-📧 [zying1309@gmail.com](mailto:zying1309@gmail.com)
+📧 [roman.business0812@gmail.com](mailto:roman.business0812@gmail.com)
 
 > Contributions welcome! Fork the repo and submit a pull request 🚀
 
