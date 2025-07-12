@@ -107,7 +107,7 @@ Assistant: We've detected an emergency. Please call emergency services or our 24
 
 ## 👨‍💻 Maintainer
 
-**Ying Zhou**
+**Roman**
 📧 [roman.business0812@gmail.com](mailto:roman.business0812@gmail.com)
 
 > Contributions welcome! Fork the repo and submit a pull request 🚀
